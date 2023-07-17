@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<ScrollPane fx:id="scrollpane" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_3_2">
+   <content>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+         <top>
+            <AnchorPane fx:id="top" prefHeight="69.0" style="-fx-background-color: rgb(0, 159, 299);" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <AnchorPane fx:id="mid" prefHeight="145.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="23.0" layoutY="14.0" prefHeight="16.0" prefWidth="27.0" text="IT" textFill="#c53824" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="14.0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="46.0" prefHeight="30.0" prefWidth="52.0" text="Home" textFill="#c53824">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="86.0" layoutY="49.0" text="/    My courses     /">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="368.0" layoutY="49.0" prefHeight="25.0" prefWidth="123.0" text="/ Question Bank" textFill="#c53824">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="664.0" layoutY="49.0" prefHeight="25.0" prefWidth="267.0" text="Editing a multiple choice questions">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="223.0" layoutY="49.0" prefHeight="25.0" prefWidth="123.0" text="    THI CUỐI KỲ" textFill="#c53824">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="514.0" layoutY="49.0" prefHeight="25.0" prefWidth="123.0" text="/   Questions" textFill="#c53824">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+         <bottom>
+            <AnchorPane fx:id="bottom" prefHeight="2192.0" prefWidth="1595.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="34.0" layoutY="24.0" prefHeight="42.0" prefWidth="293.0" text="Adding a Multiple choice question" textFill="#c53824">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label layoutX="56.0" layoutY="87.0" prefHeight="27.0" prefWidth="74.0" text="General" textFill="#c53824">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="47.0" layoutY="472.0" text="Default mark">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="58.0" layoutY="240.0" text="Question text">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="184.0" text="Question name">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="135.0" text="Category">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="combo" layoutX="605.0" layoutY="135.0" prefHeight="25.0" prefWidth="180.0" promptText="Default" />
+                  <WebView fx:id="textview" layoutX="595.0" layoutY="240.0" prefHeight="200.0" prefWidth="1000.0" />
+                  <TextField fx:id="name" layoutX="605.0" layoutY="184.0" prefHeight="35.0" prefWidth="269.0" />
+                  <TextField layoutX="605.0" layoutY="472.0" prefHeight="25.0" prefWidth="27.0" text="1" />
+                  <VBox layoutX="605.0" layoutY="544.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="460.0" AnchorPane.rightAnchor="41.0" AnchorPane.topAnchor="544.0">
+                     <children>
+                        <VBox prefHeight="350.0" prefWidth="1500.0">
+                           <children>
+                              <HBox prefHeight="200.0" prefWidth="1500.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="58.0" text="Choice 1">
+                                       <graphic>
+                                          <Label prefHeight="17.0" prefWidth="58.0" text="Choice 1" />
+                                       </graphic>
+                                    </Label>
+                                    <WebView fx:id="view1" prefHeight="200.0" prefWidth="1000.0">
+                                       <HBox.margin>
+                                          <Insets left="80.0" />
+                                       </HBox.margin>
+                                    </WebView>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="58.0" text="Grade" />
+                                    <ComboBox fx:id="combo1" prefWidth="150.0" promptText="None">
+                                       <HBox.margin>
+                                          <Insets left="70.0" />
+                                       </HBox.margin>
+                                    </ComboBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </VBox>
+                        <VBox prefHeight="300.0" prefWidth="1500.0">
+                           <children>
+                              <HBox prefHeight="200.0" prefWidth="1500.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="58.0" text="Choice 1">
+                                       <graphic>
+                                          <Label prefHeight="17.0" prefWidth="58.0" text="Choice 2" />
+                                       </graphic>
+                                    </Label>
+                                    <WebView fx:id="view2" prefHeight="200.0" prefWidth="1000.0">
+                                       <HBox.margin>
+                                          <Insets left="80.0" />
+                                       </HBox.margin>
+                                    </WebView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="58.0" text="Grade" />
+                                    <ComboBox fx:id="combo2" prefWidth="150.0" promptText="None">
+                                       <HBox.margin>
+                                          <Insets left="70.0" />
+                                       </HBox.margin>
+                                    </ComboBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="vbox3" prefHeight="300.0" prefWidth="1500.0">
+                           <children>
+                              <HBox prefHeight="200.0" prefWidth="1500.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="58.0" text="Choice 3">
+                                       <graphic>
+                                          <Label prefHeight="17.0" prefWidth="58.0" text="Choice 3" />
+                                       </graphic>
+                                    </Label>
+                                    <WebView fx:id="view3" prefHeight="200.0" prefWidth="1000.0">
+                                       <HBox.margin>
+                                          <Insets left="80.0" />
+                                       </HBox.margin>
+                                    </WebView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="58.0" text="Grade" />
+                                    <ComboBox fx:id="combo3" prefWidth="150.0" promptText="None">
+                                       <HBox.margin>
+                                          <Insets left="70.0" />
+                                       </HBox.margin>
+                                    </ComboBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="vbox4" prefHeight="300.0" prefWidth="1500.0">
+                           <children>
+                              <HBox prefHeight="200.0" prefWidth="1500.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="58.0" text="Choice 1">
+                                       <graphic>
+                                          <Label prefHeight="17.0" prefWidth="58.0" text="Choice 4" />
+                                       </graphic>
+                                    </Label>
+                                    <WebView fx:id="view4" prefHeight="200.0" prefWidth="1000.0">
+                                       <HBox.margin>
+                                          <Insets left="80.0" />
+                                       </HBox.margin>
+                                    </WebView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="58.0" text="Grade" />
+                                    <ComboBox fx:id="combo4" prefWidth="150.0" promptText="None">
+                                       <HBox.margin>
+                                          <Insets left="70.0" />
+                                       </HBox.margin>
+                                    </ComboBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="vbox5" prefHeight="300.0" prefWidth="1500.0">
+                           <children>
+                              <HBox prefHeight="200.0" prefWidth="1500.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="58.0" text="Choice 1">
+                                       <graphic>
+                                          <Label prefHeight="17.0" prefWidth="58.0" text="Choice 5" />
+                                       </graphic>
+                                    </Label>
+                                    <WebView fx:id="view5" prefHeight="200.0" prefWidth="1000.0">
+                                       <HBox.margin>
+                                          <Insets left="80.0" />
+                                       </HBox.margin>
+                                    </WebView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="58.0" text="Grade" />
+                                    <ComboBox fx:id="combo5" prefWidth="150.0" promptText="None">
+                                       <HBox.margin>
+                                          <Insets left="70.0" />
+                                       </HBox.margin>
+                                    </ComboBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <Button fx:id="morechoice" layoutX="490.0" layoutY="1175.0" mnemonicParsing="false" onAction="#blank" prefHeight="36.0" prefWidth="242.0" style="-fx-background-color: rgb(0, 159, 299);" text="BLANKS FOR 3 MORE CHOICE" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="savechanges1" layoutX="458.0" layoutY="1232.0" mnemonicParsing="false" onAction="#savechanges1" prefHeight="34.0" prefWidth="280.0" style="-fx-background-color: rgb(0, 159, 299);" text="SAVE CHANGES AND CONTINUE EDITING" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancel" layoutX="634.0" layoutY="1285.0" mnemonicParsing="false" onAction="#cancel" prefHeight="30.0" prefWidth="72.0" style="-fx-background-color: rgb(0, 159, 299);" text="CANCEL" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="savechanges" layoutX="471.0" layoutY="1286.0" mnemonicParsing="false" onAction="#savechanges" prefHeight="25.0" prefWidth="129.0" style="-fx-background-color: rgb(255,0,0);" text="SAVE CHANGES" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="savechanges11" layoutX="492.0" layoutY="2091.0" mnemonicParsing="false" onAction="#savechanges1" prefHeight="30.0" prefWidth="303.0" style="-fx-background-color: rgb(0, 159, 299);" text="SAVE CHANGES AND CONTINUE EDITING" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="savechanges2" layoutX="492.0" layoutY="2142.0" mnemonicParsing="false" onAction="#savechanges" prefHeight="30.0" prefWidth="136.0" style="-fx-background-color: rgb(255,0,0);" text="SAVE CHANGES" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancel1" layoutX="675.0" layoutY="2142.0" mnemonicParsing="false" onAction="#cancel" prefHeight="30.0" prefWidth="74.0" style="-fx-background-color: rgb(0, 159, 299);" text="CANCEL" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="570.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/tải%20xuống.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="570.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/tải%20xuống.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="570.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/tải%20xuống.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </content>
+</ScrollPane>

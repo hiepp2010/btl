@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_3_1">
+   <content>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+         <top>
+            <AnchorPane fx:id="top" prefHeight="69.0" style="-fx-background-color: rgb(0, 159, 299);" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <AnchorPane fx:id="mid" prefHeight="145.0" prefWidth="1234.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="23.0" layoutY="14.0" prefHeight="16.0" prefWidth="27.0" text="IT" textFill="#c53824" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="14.0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="46.0" prefHeight="30.0" prefWidth="52.0" text="Home" textFill="#c53824">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="86.0" layoutY="49.0" text="/    My courses     /">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="223.0" layoutY="49.0" prefHeight="25.0" prefWidth="123.0" text="    THI CUỐI KỲ" textFill="#c53824">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="37.0" layoutY="110.0" mnemonicParsing="false" text="Questions" AnchorPane.leftAnchor="37.0" />
+                  <Button layoutX="141.0" layoutY="110.0" mnemonicParsing="false" onAction="#switchTo3_3" text="Categories" />
+                  <Button layoutX="259.0" layoutY="110.0" mnemonicParsing="false" onAction="#switchTo3_4" text="Import" />
+                  <Button layoutX="353.0" layoutY="110.0" mnemonicParsing="false" text="Export" />
+               </children>
+            </AnchorPane>
+         </center>
+         <bottom>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <top>
+                  <AnchorPane prefHeight="71.0" prefWidth="1234.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="32.0" layoutY="20.0" prefHeight="38.0" prefWidth="185.0" text=" Question Bank" textFill="#c52424">
+                           <font>
+                              <Font size="26.0" />
+                           </font></Label>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <center>
+                  <AnchorPane prefHeight="227.0" prefWidth="1234.0" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <AnchorPane prefHeight="542.0" prefWidth="1234.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="36.0" layoutY="6.0" prefHeight="34.0" prefWidth="128.0" text="Select a category">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="cate_list" layoutX="177.0" layoutY="14.0" onAction="#Select_category" prefWidth="150.0" promptText="default" />
+                        <Label layoutX="36.0" layoutY="50.0" prefHeight="29.0" prefWidth="312.0" text="The default category for questions shared in context" />
+                        <CheckBox fx:id="also" layoutX="36.0" layoutY="92.0" mnemonicParsing="false" onAction="#Select_category" prefHeight="17.0" prefWidth="247.0" text="Also show question from subcategories" />
+                        <CheckBox layoutX="36.0" layoutY="122.0" mnemonicParsing="false" text="Also show old questions" />
+                        <Button fx:id="newQuestion" layoutX="36.0" layoutY="167.0" mnemonicParsing="false" onAction="#switchTo3_2" prefHeight="47.0" prefWidth="269.0" style="-fx-background-color: rgb(0,159,229);" text="CREATE A NEW QUESTION" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <ScrollPane layoutX="33.0" layoutY="265.0" prefHeight="222.0" prefWidth="1169.0">
+                           <content>
+                              <VBox fx:id="vbox" prefHeight="224.0" prefWidth="1171.0" />
+                           </content>
+                        </ScrollPane>
+                        <CheckBox layoutX="37.0" layoutY="235.0" mnemonicParsing="false" text="Question">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </CheckBox>
+                        <Label layoutX="1109.0" layoutY="235.0" text="Action">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </bottom>
+            </BorderPane>
+         </bottom>
+      </BorderPane>
+   </content>
+</ScrollPane>
