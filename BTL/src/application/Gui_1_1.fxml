@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="scroll" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_1_1">
+   <content>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+         <top>
+            <AnchorPane fx:id="top" prefHeight="30" style="-fx-background-color: rgb(0,115,165);" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <AnchorPane fx:id="mid" prefHeight="145.0" prefWidth="947.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="1104.0" layoutY="74.0" mnemonicParsing="false" onAction="#switchTo_5_1" prefHeight="35.0" prefWidth="158.0" style="-fx-background-color: rgb(0,115,165);" text="TURN EDITING ON" textFill="WHITE" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="30.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Button>
+                  <Label layoutX="23.0" layoutY="14.0" prefHeight="16.0" prefWidth="27.0" text="IT" textFill="#c53824" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="14.0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="46.0" prefHeight="30.0" prefWidth="52.0" text="Home" textFill="#c53824">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="86.0" layoutY="49.0" text="/    My courses     /">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="223.0" layoutY="49.0" prefHeight="25.0" prefWidth="123.0" text="    THI CUỐI KỲ" textFill="#c53824">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="858.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchTo" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="30.0">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../image/settingImage.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </center>
+         <bottom>
+            <AnchorPane prefHeight="309.0" prefWidth="947.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="table" layoutX="124.0" prefHeight="200.0" prefWidth="724.0">
+                    <columns>
+                      <TableColumn fx:id="name_column" prefWidth="723.0" text="Danh sách các Quiz" />
+                        <TableColumn fx:id="time_column" minWidth="0.0" prefWidth="0.0" text="Time" />
+                        <TableColumn fx:id="ttype_column" minWidth="0.0" prefWidth="0.0" text="Time_type" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="443.0" layoutY="226.0" mnemonicParsing="false" onAction="#switchTo_6_1" prefHeight="25.0" prefWidth="92.0" text="Enter Quiz" />
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </content>
+</ScrollPane>

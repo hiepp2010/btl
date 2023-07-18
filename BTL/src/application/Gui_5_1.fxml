@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="623.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_5_1">
+   <children>
+      <Label layoutX="38.0" layoutY="14.0" prefHeight="32.0" prefWidth="189.0" text="Adding a new Quiz" textFill="#c52424">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="51.0" prefHeight="22.0" prefWidth="99.0" text="General" textFill="#c52424" />
+      <Label layoutX="48.0" layoutY="87.0" text="Name" />
+      <Label layoutX="48.0" layoutY="120.0" text="Description" />
+      <Label layoutX="46.0" layoutY="272.0" prefHeight="25.0" prefWidth="37.0" text="Timing" textFill="#c52424" />
+      <TextField fx:id="name_field" layoutX="266.0" layoutY="92.0" prefHeight="25.0" prefWidth="214.0" />
+      <TextArea fx:id="des_field" layoutX="268.0" layoutY="129.0" prefHeight="86.0" prefWidth="330.0" />
+      <Label layoutX="46.0" layoutY="326.0" prefHeight="17.0" prefWidth="90.0" text="Open the quiz" />
+      <Label layoutX="46.0" layoutY="372.0" prefHeight="17.0" prefWidth="80.0" text="Close the quiz" />
+      <Label layoutX="46.0" layoutY="425.0" prefHeight="17.0" prefWidth="61.0" text="Time limit" />
+      <Label layoutX="46.0" layoutY="474.0" text="When time expires" />
+      <ComboBox layoutX="268.0" layoutY="322.0" prefHeight="25.0" prefWidth="61.0" promptText="21" />
+      <ComboBox layoutX="335.0" layoutY="322.0" prefHeight="25.0" prefWidth="90.0" promptText="March" />
+      <ComboBox layoutX="432.0" layoutY="322.0" prefHeight="25.0" prefWidth="68.0" promptText="2023" />
+      <ComboBox layoutX="512.0" layoutY="322.0" prefHeight="25.0" prefWidth="68.0" promptText="15" />
+      <ComboBox layoutX="589.0" layoutY="322.0" prefHeight="25.0" prefWidth="74.0" promptText="57" />
+      <ComboBox layoutX="268.0" layoutY="368.0" prefHeight="25.0" prefWidth="61.0" promptText="21" />
+      <ComboBox layoutX="335.0" layoutY="368.0" prefHeight="25.0" prefWidth="90.0" promptText="March" />
+      <ComboBox layoutX="432.0" layoutY="368.0" prefHeight="25.0" prefWidth="68.0" promptText="2023" />
+      <ComboBox layoutX="512.0" layoutY="368.0" prefHeight="25.0" prefWidth="68.0" promptText="15" />
+      <ComboBox layoutX="589.0" layoutY="368.0" prefHeight="25.0" prefWidth="74.0" promptText="57" />
+      <ComboBox fx:id="ttype_field" layoutX="348.0" layoutY="421.0" prefHeight="25.0" prefWidth="109.0" promptText="Minutes" />
+      <ComboBox layoutX="268.0" layoutY="470.0" prefHeight="25.0" prefWidth="278.0" promptText="Open attempts are submitted automatically" />
+      <Button layoutX="249.0" layoutY="544.0" mnemonicParsing="false" onAction="#add_quiz" prefHeight="37.0" prefWidth="80.0" text="Create" />
+      <Button layoutX="436.0" layoutY="541.0" mnemonicParsing="false" onAction="#cancel" prefHeight="37.0" prefWidth="80.0" text="Cancel" />
+      <CheckBox fx:id="checkBox" layoutX="469.0" layoutY="425.0" mnemonicParsing="false" />
+      <TextField fx:id="time_field" layoutX="269.0" layoutY="421.0" prefHeight="25.0" prefWidth="74.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="649.0" prefWidth="897.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_6_3">
+   <children>
+      <Label layoutX="97.0" layoutY="31.0" text="Select a category:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cate_list" layoutX="240.0" layoutY="29.0" onAction="#Select_category" prefWidth="150.0" promptText="Category" />
+      <Label layoutX="97.0" layoutY="74.0" prefHeight="20.0" prefWidth="95.0" text="Search option" textFill="#0e8cb2">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="also" layoutX="97.0" layoutY="105.0" mnemonicParsing="false" onAction="#Select_category" text="Also show question from subcategories" />
+      <CheckBox layoutX="97.0" layoutY="136.0" mnemonicParsing="false" text="Also show old question" />
+      <ScrollPane layoutX="82.0" layoutY="192.0" prefHeight="351.0" prefWidth="741.0">
+         <content>
+            <VBox fx:id="vbox" prefHeight="353.0" prefWidth="741.0" />
+         </content>
+      </ScrollPane>
+      <CheckBox fx:id="All_ques" layoutX="97.0" layoutY="167.0" mnemonicParsing="false" text="Question" textFill="#27769e" />
+      <Button layoutX="323.0" layoutY="562.0" mnemonicParsing="false" onAction="#add_question" prefHeight="37.0" prefWidth="251.0" style="-fx-background-color: rgb(0,159,299);" text="ADD SELECTED QUESTION TO QUIZ" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

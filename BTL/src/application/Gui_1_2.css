@@ -1,0 +1,14 @@
+.root{
+	-fx-background-color:white;
+}
+
+.button {
+	-fx-background-color: transparent; 
+	-fx-border-color: transparent;
+}
+
+
+.button:hover {
+    /* Styles for hover */
+    -fx-text-fill: red;
+}

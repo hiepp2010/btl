@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_1_2">
+   <children>
+      <Label layoutX="62.0" layoutY="76.0" prefHeight="31.0" prefWidth="121.0" text="Question bank" textFill="#00a0df">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="557.0" layoutY="79.0" mnemonicParsing="false" onAction="#console" prefHeight="25.0" prefWidth="121.0" text="Questions" textFill="#00a0df" />
+      <Button layoutX="557.0" layoutY="125.0" mnemonicParsing="false" onAction="#switchTo3_3" prefHeight="25.0" prefWidth="121.0" text="Categories" textFill="#00a0df" />
+      <Button layoutX="557.0" layoutY="175.0" mnemonicParsing="false" onAction="#switchTo3_4" prefHeight="25.0" prefWidth="121.0" text="Import" textFill="#00a0df" />
+      <Button layoutX="557.0" layoutY="222.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" text="Export" textFill="#00a0df" />
+   </children>
+</AnchorPane>
